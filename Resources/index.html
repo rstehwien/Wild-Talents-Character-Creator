@@ -13,25 +13,57 @@
 			Wild Talents Character Creator
 		</title>
 	</head>
-		<div id="wtcc_tabs" control="jquery_tabs" >
-		  <div id="wtcc_tab_info" title="Info"></div>
-		  <div id="wtcc_tab_stats" title="Stats"></div>
-		  <div id="wtcc_tab_skills" title="Skills"></div>
-		  <div id="wtcc_tab_archetype" title="Archetype"></div>
-		  <div id="wtcc_tab_powers" title="Powers"></div>
-		  <div id="wtcc_tab_willpower" title="Willpower"></div>
-		  <div id="wtcc_tab_load-save" title="Load/Save">
-				<button type="button">Load</button>
-				<button type="button">XML</button>
-				<button type="button">Text</button>
+		<div id="wtcc_pages" control="jquery_tabs" >
+		  <div id="wtcc_page_info" title="Info">
+		  	<p>Info goes here</p>
+		  </div>
+		  <div id="wtcc_page_stats" title="Stats">
+		  	<p>Stats go here</p>
+		  </div>
+		  <div id="wtcc_page_skills" title="Skills">
+		  	<p>Skills go here</p>
+		  </div>
+		  <div id="wtcc_page_archetype" title="Archetype">
+		  	<p>Archetype goes here</p>		  	
+		  </div>
+		  <div id="wtcc_page_powers" title="Powers">
+		  	<p>Powers go here</p>
+		  </div>
+		  <div id="wtcc_page_willpower" title="Willpower">
+		  	<p>Willpower goes here</p>
+		  </div>
+		  <div id="wtcc_page_character_io" title="Load/Save">
+				<button id="wtcc_button_load" type="button">Load</button>
+				<button id="wtcc_button_save_xml" type="button">XML</button>
+				<button id="wtcc_button_save_text" type="button">Text</button>
 		  	<textarea id="wtcc_character_textarea" style="width:100%" rows="40"></textarea>
 		  </div>
-		  <div id="wtcc_tab_config" title="Config">
-				<button type="button">Load</button>
-				<button type="button">XML</button>
+		  <div id="wtcc_page_config" title="Config">
+				<button id="wtcc_button_load_config" type="button">Load</button>
+				<button id="wtcc_button_save_config" type="button">XML</button>
 		  	<textarea id="wtcc_config_textarea" style="width:100%" rows="40"></textarea>
 		  </div>
-		  <div id="wtcc_tab_messages" title="Messages"></div>
+		  <div id="wtcc_page_messages" title="Messages"><ul id="wtcc_messages"></ul></div>
+		</div>
+		
+		<!-- Templates for new dynamic items -->
+		<div id="wtcc_template_info" style="display:none">
+			<p>info</p>
+		</div>
+		<div id="wtcc_template_pool" style="display:none">
+			<p>pool</p>
+		</div>
+		<div id="wtcc_template_effect" style="display:none">
+			<p>effect</p>
+		</div>
+		<div id="wtcc_template_capacity" style="display:none">
+			<p>capacity</p>
+		</div>
+		<div id="wtcc_template_modifier" style="display:none">
+			<p>modifier</p>
+		</div>
+		<div id="wtcc_template_motivation" style="display:none">
+			<p>motivation</p>
 		</div>
 	</body>
 </html>

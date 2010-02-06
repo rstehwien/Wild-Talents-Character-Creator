@@ -18,8 +18,10 @@
       <config-choice type="stats" link="default_stats"/>
       <config-choice type="skills" link="_ALL_"/>
       <config-choice type="meta-qualities" link="_ALL_"/>
-      <config-choice type="archetypes" link="_ALL_"/>
-      <config-choice type="modifiers" link="_ALL_"/>
+      <!--<config-choice type="archetypes" link="_ALL_"/>-->
+      <config-choice type="archetypes" link="kerberos_club_archetypes"/>
+      <config-choice type="archetypes" link="wild_talents_archetypes"/>
+      <!--<config-choice type="modifiers" link="_ALL_"/>-->
       <config-choice type="powers" link="_ALL_"/>
       <config-choice type="character" link="default_character"/>
       <config-choice type="tables" link="default_tables"/>
