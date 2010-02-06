@@ -1,6 +1,6 @@
 var WTCC = {
 
-    loadConfig: function(xml) {
+    loadDataXml: function(xml) {
         $(xml).find('config-choice').each(function() {
             var type = $(this).attr('type');
             var link = $(this).attr('link');
@@ -10,13 +10,17 @@ var WTCC = {
         WTCC.xml = xml;
         WTCC.initPage();
     },
+    
+    loadCharacterXml: function(xml) {
+      
+    },
 
     documentReady: function() {
         $.ajax({
             type: "GET",
             url: "wtcc/xml/WildTalentsCharacterCreatorData.xml",
             dataType: "xml",
-            success: WTCC.loadConfig
+            success: WTCC.loadDataXml
         });
     },
 
