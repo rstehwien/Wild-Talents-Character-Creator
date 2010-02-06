@@ -202,6 +202,7 @@
       <xs:attribute name="ref" type="xs:NCName"/>
       <xs:attribute name="name" type="xs:string" use="required"/>
       <xs:attribute name="id" type="xs:ID"/>
+      <xs:attribute name="link" type="xs:NCName" use="optional"/>
     </xs:complexType>
   </xs:element>
   <xs:element name="modifiers">

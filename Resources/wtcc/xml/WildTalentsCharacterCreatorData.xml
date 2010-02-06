@@ -48,45 +48,45 @@
       <capacity type="power" name="Speed" mod="2"/>
       <capacity type="power" name="Touch" mod="1"/>
       <capacity type="power" name="Self" mod="2"/>
-      <capacity type="Body" name="Lift" mod="0"/>
-      <capacity type="Body" name="Throw" mod="0"/>
-      <capacity type="Body" name="Damage" mod="0"/>
-      <capacity type="Body" name="Sprint" mod="0"/>
-      <capacity type="Body" name="Long Jump" mod="0"/>
-      <capacity type="Body" name="High Jump" mod="0"/>
+      <capacity type="stat" link="body" name="Lift" mod="0"/>
+      <capacity type="stat" link="body" name="Throw" mod="0"/>
+      <capacity type="stat" link="body" name="Damage" mod="0"/>
+      <capacity type="stat" link="body" name="Sprint" mod="0"/>
+      <capacity type="stat" link="body" name="Long Jump" mod="0"/>
+      <capacity type="stat" link="body" name="High Jump" mod="0"/>
     </capacities>
   </config-chooser>
 
   <config-chooser type="stats">
     <pools type="stats" ref="default_stats">
-      <pool name="">
+      <pool name="Body">
         <effects>
-          <effect type="stat" name="Body" cost="4"/>
+          <effect type="stat" name="Body" ref="body" cost="4"/>
         </effects>
       </pool>
-      <pool name="">
+      <pool name="Coordination">
         <effects>
-          <effect type="stat" name="Coordination" cost="4"/>
+          <effect type="stat" name="Coordination" ref="coordination" cost="4"/>
         </effects>
       </pool>
-      <pool name="">
+      <pool name="Sense">
         <effects>
-          <effect type="stat" name="Sense" cost="4"/>
+          <effect type="stat" name="Sense" ref="sense" cost="4"/>
         </effects>
       </pool>
-      <pool name="">
+      <pool name="Mind">
         <effects>
-          <effect type="stat" name="Mind" cost="4"/>
+          <effect type="stat" name="Mind" ref="mind" cost="4"/>
         </effects>
       </pool>
-      <pool name="">
+      <pool name="Charm">
         <effects>
-          <effect type="stat" name="Charm" cost="4"/>
+          <effect type="stat" name="Charm" ref="charm" cost="4"/>
         </effects>
       </pool>
-      <pool name="">
+      <pool name="Command">
         <effects>
-          <effect type="stat" name="Command" cost="4"/>
+          <effect type="stat" name="Command" ref="Command" cost="4"/>
         </effects>
       </pool>
     </pools>
@@ -96,147 +96,147 @@
     <pools type="skills" ref="wild_talents_skills" name="Wild Talents">
       <pool name="">
         <effects>
-          <effect type="skill" cost="1" name="Athletics" link="Body" special-required="true" book="WT2E"/>
+          <effect type="skill" cost="1" name="Athletics" link="body" special-required="true" book="WT2E"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="1" name="Block" link="Body" book="WT2E"/>
+          <effect type="skill" cost="1" name="Block" link="body" book="WT2E"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="1" name="Brawling" link="Body" book="WT2E"/>
+          <effect type="skill" cost="1" name="Brawling" link="body" book="WT2E"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="1" name="Endurance" link="Body" book="WT2E"/>
+          <effect type="skill" cost="1" name="Endurance" link="body" book="WT2E"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="1" name="Melee Weapon" link="Body" special-required="true" book="WT2E"/>
+          <effect type="skill" cost="1" name="Melee Weapon" link="body" special-required="true" book="WT2E"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="1" name="Dodge" link="Coordination" book="WT2E"/>
+          <effect type="skill" cost="1" name="Dodge" link="coordination" book="WT2E"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="1" name="Driving" link="Coordination" special-required="true" book="WT2E"/>
+          <effect type="skill" cost="1" name="Driving" link="coordination" special-required="true" book="WT2E"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="1" name="Ranged Weapon" link="Coordination" special-required="true" book="WT2E"/>
+          <effect type="skill" cost="1" name="Ranged Weapon" link="coordination" special-required="true" book="WT2E"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="1" name="Stealth" link="Coordination" book="WT2E"/>
+          <effect type="skill" cost="1" name="Stealth" link="coordination" book="WT2E"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="1" name="Empathy" link="Sense" book="WT2E"/>
+          <effect type="skill" cost="1" name="Empathy" link="sense" book="WT2E"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="1" name="Perception" link="Sense" book="WT2E"/>
+          <effect type="skill" cost="1" name="Perception" link="sense" book="WT2E"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="1" name="Scrutiny" link="Sense" book="WT2E"/>
+          <effect type="skill" cost="1" name="Scrutiny" link="sense" book="WT2E"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="1" name="First Aid" link="Mind" book="WT2E"/>
+          <effect type="skill" cost="1" name="First Aid" link="mind" book="WT2E"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="1" name="Knowledge" link="Mind" special-required="true" book="WT2E"/>
+          <effect type="skill" cost="1" name="Knowledge" link="mind" special-required="true" book="WT2E"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="1" name="Language" link="Mind" special-required="true" book="WT2E"/>
+          <effect type="skill" cost="1" name="Language" link="mind" special-required="true" book="WT2E"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="1" name="Medicine" link="Mind" book="WT2E"/>
+          <effect type="skill" cost="1" name="Medicine" link="mind" book="WT2E"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="1" name="Navigation" link="Mind" book="WT2E"/>
+          <effect type="skill" cost="1" name="Navigation" link="mind" book="WT2E"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="1" name="Research" link="Mind" book="WT2E"/>
+          <effect type="skill" cost="1" name="Research" link="mind" book="WT2E"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="1" name="Security Systems" link="Mind" book="WT2E"/>
+          <effect type="skill" cost="1" name="Security Systems" link="mind" book="WT2E"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="1" name="Streetwise" link="Mind" book="WT2E"/>
+          <effect type="skill" cost="1" name="Streetwise" link="mind" book="WT2E"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="1" name="Survival" link="Mind" book="WT2E"/>
+          <effect type="skill" cost="1" name="Survival" link="mind" book="WT2E"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="1" name="Tatics" link="Mind" book="WT2E"/>
+          <effect type="skill" cost="1" name="Tatics" link="mind" book="WT2E"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="1" name="Lie" link="Charm" book="WT2E"/>
+          <effect type="skill" cost="1" name="Lie" link="charm" book="WT2E"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="1" name="Performance" link="Charm" special-required="true" book="WT2E"/>
+          <effect type="skill" cost="1" name="Performance" link="charm" special-required="true" book="WT2E"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="1" name="Persuasion" link="Charm" book="WT2E"/>
+          <effect type="skill" cost="1" name="Persuasion" link="charm" book="WT2E"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="1" name="Interrogation" link="Command" book="WT2E"/>
+          <effect type="skill" cost="1" name="Interrogation" link="command" book="WT2E"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="1" name="Intimidation" link="Command" book="WT2E"/>
+          <effect type="skill" cost="1" name="Intimidation" link="command" book="WT2E"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="1" name="Leadership" link="Command" book="WT2E"/>
+          <effect type="skill" cost="1" name="Leadership" link="command" book="WT2E"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="1" name="Stability" link="Command" book="WT2E"/>
+          <effect type="skill" cost="1" name="Stability" link="command" book="WT2E"/>
         </effects>
       </pool>
     </pools>
@@ -245,179 +245,179 @@
       <!-- Basic Skills KC -->
       <pool name="">
         <effects>
-          <effect type="skill" cost="0" name="Boxing" link="Body" book="KC"/>
+          <effect type="skill" cost="0" name="Boxing" link="body" book="KC"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="0" name="Lifting" link="Body" book="KC"/>
+          <effect type="skill" cost="0" name="Lifting" link="body" book="KC"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="0" name="Running" link="Body" book="KC"/>
+          <effect type="skill" cost="0" name="Running" link="body" book="KC"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="0" name="Sports" link="Body" book="KC"/>
+          <effect type="skill" cost="0" name="Sports" link="body" book="KC"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="0" name="Wrestling" link="Body" book="KC"/>
+          <effect type="skill" cost="0" name="Wrestling" link="body" book="KC"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="0" name="Acrobatics" link="Coordination" book="KC"/>
+          <effect type="skill" cost="0" name="Acrobatics" link="coordination" book="KC"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="0" name="Archery" link="Coordination" book="KC"/>
+          <effect type="skill" cost="0" name="Archery" link="coordination" book="KC"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="0" name="Climb" link="Coordination" book="KC"/>
+          <effect type="skill" cost="0" name="Climb" link="coordination" book="KC"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="0" name="Dodge" link="Coordination" book="KC"/>
+          <effect type="skill" cost="0" name="Dodge" link="coordination" book="KC"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="0" name="Evasion" link="Coordination" book="KC"/>
+          <effect type="skill" cost="0" name="Evasion" link="coordination" book="KC"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="0" name="Horsemanship" link="Coordination" book="KC"/>
+          <effect type="skill" cost="0" name="Horsemanship" link="coordination" book="KC"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="0" name="Pistol" link="Coordination" book="KC"/>
+          <effect type="skill" cost="0" name="Pistol" link="coordination" book="KC"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="0" name="Rifle" link="Coordination" book="KC"/>
+          <effect type="skill" cost="0" name="Rifle" link="coordination" book="KC"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="0" name="Empathy" link="Sense" book="KC"/>
+          <effect type="skill" cost="0" name="Empathy" link="sense" book="KC"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="0" name="Hear" link="Sense" book="KC"/>
+          <effect type="skill" cost="0" name="Hear" link="sense" book="KC"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="0" name="Notice" link="Sense" book="KC"/>
+          <effect type="skill" cost="0" name="Notice" link="sense" book="KC"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="0" name="Reflexes" link="Sense" book="KC"/>
+          <effect type="skill" cost="0" name="Reflexes" link="sense" book="KC"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="0" name="Search" link="Sense" book="KC"/>
+          <effect type="skill" cost="0" name="Search" link="sense" book="KC"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="0" name="See" link="Sense" book="KC"/>
+          <effect type="skill" cost="0" name="See" link="sense" book="KC"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="0" name="Smell" link="Sense" book="KC"/>
+          <effect type="skill" cost="0" name="Smell" link="sense" book="KC"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="0" name="Taste" link="Sense" book="KC"/>
+          <effect type="skill" cost="0" name="Taste" link="sense" book="KC"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="0" name="Touch" link="Sense" book="KC"/>
+          <effect type="skill" cost="0" name="Touch" link="sense" book="KC"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="0" name="Track" link="Sense" book="KC"/>
+          <effect type="skill" cost="0" name="Track" link="sense" book="KC"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="0" name="A Single Academic Field" link="Mind" special-required="true" book="KC"/>
+          <effect type="skill" cost="0" name="A Single Academic Field" link="mind" special-required="true" book="KC"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="0" name="A Language" link="Mind" special-required="true" book="KC"/>
+          <effect type="skill" cost="0" name="A Language" link="mind" special-required="true" book="KC"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="0" name="Act" link="Command" book="KC"/>
+          <effect type="skill" cost="0" name="Act" link="command" book="KC"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="0" name="Intimidate" link="Command" book="KC"/>
+          <effect type="skill" cost="0" name="Intimidate" link="command" book="KC"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="0" name="Lie" link="Command" book="KC"/>
+          <effect type="skill" cost="0" name="Lie" link="command" book="KC"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="0" name="Stability" link="Command" book="KC"/>
+          <effect type="skill" cost="0" name="Stability" link="command" book="KC"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="0" name="Bluff" link="Charm" book="KC"/>
+          <effect type="skill" cost="0" name="Bluff" link="charm" book="KC"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="0" name="Feign" link="Charm" book="KC"/>
+          <effect type="skill" cost="0" name="Feign" link="charm" book="KC"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="0" name="Innocence" link="Charm" book="KC"/>
+          <effect type="skill" cost="0" name="Innocence" link="charm" book="KC"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="0" name="Lie" link="Charm" book="KC"/>
+          <effect type="skill" cost="0" name="Lie" link="charm" book="KC"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="0" name="Seduce" link="Charm" book="KC"/>
+          <effect type="skill" cost="0" name="Seduce" link="charm" book="KC"/>
         </effects>
       </pool>
 
       <!-- Advanced Skills KC -->
       <pool name="">
         <effects>
-          <effect type="skill" cost="0" name="Athletics" link="Body" book="KC">
+          <effect type="skill" cost="0" name="Athletics" link="body" book="KC">
             <modifiers>
               <modifier type="skill" name="Broad" cost="1"/>
             </modifiers>
@@ -426,7 +426,7 @@
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="0" name="Brawling" link="Body" book="KC">
+          <effect type="skill" cost="0" name="Brawling" link="body" book="KC">
             <modifiers>
               <modifier type="skill" name="Broad" cost="1"/>
             </modifiers>
@@ -435,7 +435,7 @@
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="0" name="Might" link="Body" book="KC">
+          <effect type="skill" cost="0" name="Might" link="body" book="KC">
             <modifiers>
               <modifier type="skill" name="Broad" cost="1"/>
             </modifiers>
@@ -444,7 +444,7 @@
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="0" name="Driving" link="Coordination" book="KC">
+          <effect type="skill" cost="0" name="Driving" link="coordination" book="KC">
             <modifiers>
               <modifier type="skill" name="Broad" cost="1"/>
             </modifiers>
@@ -453,7 +453,7 @@
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="0" name="Shooting" link="Coordination" book="KC">
+          <effect type="skill" cost="0" name="Shooting" link="coordination" book="KC">
             <modifiers>
               <modifier type="skill" name="Broad" cost="1"/>
             </modifiers>
@@ -462,7 +462,7 @@
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="0" name="Sportsman" link="Coordination" book="KC">
+          <effect type="skill" cost="0" name="Sportsman" link="coordination" book="KC">
             <modifiers>
               <modifier type="skill" name="Broad" cost="1"/>
             </modifiers>
@@ -471,7 +471,7 @@
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="0" name="Awareness" link="Sense" book="KC">
+          <effect type="skill" cost="0" name="Awareness" link="sense" book="KC">
             <modifiers>
               <modifier type="skill" name="Broad" cost="1"/>
             </modifiers>
@@ -480,7 +480,7 @@
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="0" name="Investigate" link="Sense" book="KC">
+          <effect type="skill" cost="0" name="Investigate" link="sense" book="KC">
             <modifiers>
               <modifier type="skill" name="Broad" cost="1"/>
             </modifiers>
@@ -489,7 +489,7 @@
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="0" name="Education" link="Mind" book="KC">
+          <effect type="skill" cost="0" name="Education" link="mind" book="KC">
             <modifiers>
               <modifier type="skill" name="Broad" cost="1"/>
             </modifiers>
@@ -498,7 +498,7 @@
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="0" name="Finance" link="Mind" book="KC">
+          <effect type="skill" cost="0" name="Finance" link="mind" book="KC">
             <modifiers>
               <modifier type="skill" name="Broad" cost="1"/>
             </modifiers>
@@ -507,7 +507,7 @@
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="0" name="Linguistics" link="Mind" book="KC">
+          <effect type="skill" cost="0" name="Linguistics" link="mind" book="KC">
             <modifiers>
               <modifier type="skill" name="Broad" cost="1"/>
             </modifiers>
@@ -516,7 +516,7 @@
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="0" name="Discipline" link="Command" book="KC">
+          <effect type="skill" cost="0" name="Discipline" link="command" book="KC">
             <modifiers>
               <modifier type="skill" name="Broad" cost="1"/>
             </modifiers>
@@ -525,7 +525,7 @@
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="0" name="Inspire" link="Command" book="KC">
+          <effect type="skill" cost="0" name="Inspire" link="command" book="KC">
             <modifiers>
               <modifier type="skill" name="Broad" cost="1"/>
             </modifiers>
@@ -534,7 +534,7 @@
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="0" name="Iron Will" link="Command" book="KC">
+          <effect type="skill" cost="0" name="Iron Will" link="command" book="KC">
             <modifiers>
               <modifier type="skill" name="Broad" cost="1"/>
             </modifiers>
@@ -543,7 +543,7 @@
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="0" name="Leadership" link="Command" book="KC">
+          <effect type="skill" cost="0" name="Leadership" link="command" book="KC">
             <modifiers>
               <modifier type="skill" name="Broad" cost="1"/>
             </modifiers>
@@ -552,7 +552,7 @@
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="0" name="Deceive" link="Charm" book="KC">
+          <effect type="skill" cost="0" name="Deceive" link="charm" book="KC">
             <modifiers>
               <modifier type="skill" name="Broad" cost="1"/>
             </modifiers>
@@ -561,7 +561,7 @@
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="0" name="Influence" link="Charm" book="KC">
+          <effect type="skill" cost="0" name="Influence" link="charm" book="KC">
             <modifiers>
               <modifier type="skill" name="Broad" cost="1"/>
             </modifiers>
@@ -674,7 +674,7 @@
       <!-- Social Positions KC -->
       <pool name="">
         <effects>
-          <effect type="skill" cost="0" name="Country Vicar" link="Command" book="KC">
+          <effect type="skill" cost="0" name="Country Vicar" link="command" book="KC">
             <modifiers>
               <modifier type="skill" name="Influence" cost="1"/>
             </modifiers>
@@ -683,7 +683,7 @@
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="0" name="Cultist" link="Command" book="KC">
+          <effect type="skill" cost="0" name="Cultist" link="command" book="KC">
             <modifiers>
               <modifier type="skill" name="Influence" cost="1"/>
             </modifiers>
@@ -692,7 +692,7 @@
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="0" name="Faerie Fascination" link="Command" book="KC">
+          <effect type="skill" cost="0" name="Faerie Fascination" link="command" book="KC">
             <modifiers>
               <modifier type="skill" name="Influence" cost="1"/>
             </modifiers>
@@ -701,7 +701,7 @@
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="0" name="Holder of Her Majesty’s Commission" link="Command" book="KC">
+          <effect type="skill" cost="0" name="Holder of Her Majesty’s Commission" link="command" book="KC">
             <modifiers>
               <modifier type="skill" name="Influence" cost="1"/>
             </modifiers>
@@ -710,7 +710,7 @@
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="0" name="Inherited Fortune" link="Command" book="KC">
+          <effect type="skill" cost="0" name="Inherited Fortune" link="command" book="KC">
             <modifiers>
               <modifier type="skill" name="Influence" cost="1"/>
             </modifiers>
@@ -719,7 +719,7 @@
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="0" name="Kerberan" link="Command" book="KC">
+          <effect type="skill" cost="0" name="Kerberan" link="command" book="KC">
             <modifiers>
               <modifier type="skill" name="Influence" cost="1"/>
             </modifiers>
@@ -728,7 +728,7 @@
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="0" name="Member of Parliament" link="Command" book="KC">
+          <effect type="skill" cost="0" name="Member of Parliament" link="command" book="KC">
             <modifiers>
               <modifier type="skill" name="Influence" cost="1"/>
             </modifiers>
@@ -737,7 +737,7 @@
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="0" name="Noble Title" link="Command" book="KC">
+          <effect type="skill" cost="0" name="Noble Title" link="command" book="KC">
             <modifiers>
               <modifier type="skill" name="Influence" cost="1"/>
             </modifiers>
@@ -746,7 +746,7 @@
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="0" name="Underworld Influence" link="Command" book="KC">
+          <effect type="skill" cost="0" name="Underworld Influence" link="command" book="KC">
             <modifiers>
               <modifier type="skill" name="Influence" cost="1"/>
             </modifiers>
@@ -882,147 +882,147 @@
       <!-- Standard Style KC Skills -->
       <pool name="">
         <effects>
-          <effect type="skill" cost="1" name="Block" link="Body" book="KC"/>
+          <effect type="skill" cost="1" name="Block" link="body" book="KC"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="1" name="Brawling" link="Body" book="KC"/>
+          <effect type="skill" cost="1" name="Brawling" link="body" book="KC"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="1" name="Endurance" link="Body" book="KC"/>
+          <effect type="skill" cost="1" name="Endurance" link="body" book="KC"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="1" name="Melee Weapon" link="Body" special-required="true" book="KC"/>
+          <effect type="skill" cost="1" name="Melee Weapon" link="body" special-required="true" book="KC"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="1" name="Sport" link="Body" book="KC"/>
+          <effect type="skill" cost="1" name="Sport" link="body" book="KC"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="1" name="Dodge" link="Coordination" book="KC"/>
+          <effect type="skill" cost="1" name="Dodge" link="coordination" book="KC"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="1" name="Driving" link="Coordination" special-required="true" book="KC"/>
+          <effect type="skill" cost="1" name="Driving" link="coordination" special-required="true" book="KC"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="1" name="Ranged Weapon" link="Coordination" special-required="true" book="KC"/>
+          <effect type="skill" cost="1" name="Ranged Weapon" link="coordination" special-required="true" book="KC"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="1" name="Riding" link="Coordination" book="KC"/>
+          <effect type="skill" cost="1" name="Riding" link="coordination" book="KC"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="1" name="Stealth" link="Coordination" book="KC"/>
+          <effect type="skill" cost="1" name="Stealth" link="coordination" book="KC"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="1" name="Empathy" link="Sense" book="KC"/>
+          <effect type="skill" cost="1" name="Empathy" link="sense" book="KC"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="1" name="Perception" link="Sense" book="KC"/>
+          <effect type="skill" cost="1" name="Perception" link="sense" book="KC"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="1" name="Scrutiny" link="Sense" book="KC"/>
+          <effect type="skill" cost="1" name="Scrutiny" link="sense" book="KC"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="1" name="First Aid" link="Mind" book="KC"/>
+          <effect type="skill" cost="1" name="First Aid" link="mind" book="KC"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="1" name="Knowledge" link="Mind" special-required="true" book="KC"/>
+          <effect type="skill" cost="1" name="Knowledge" link="mind" special-required="true" book="KC"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="1" name="Language" link="Mind" special-required="true" book="KC"/>
+          <effect type="skill" cost="1" name="Language" link="mind" special-required="true" book="KC"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="1" name="Medicine" link="Mind" book="KC"/>
+          <effect type="skill" cost="1" name="Medicine" link="mind" book="KC"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="1" name="Navigation" link="Mind" book="KC"/>
+          <effect type="skill" cost="1" name="Navigation" link="mind" book="KC"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="1" name="Research" link="Mind" book="KC"/>
+          <effect type="skill" cost="1" name="Research" link="mind" book="KC"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="1" name="Streetwise" link="Mind" book="KC"/>
+          <effect type="skill" cost="1" name="Streetwise" link="mind" book="KC"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="1" name="Survival" link="Mind" book="KC"/>
+          <effect type="skill" cost="1" name="Survival" link="mind" book="KC"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="1" name="Tatics" link="Mind" book="KC"/>
+          <effect type="skill" cost="1" name="Tatics" link="mind" book="KC"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="1" name="Lie" link="Charm" book="KC"/>
+          <effect type="skill" cost="1" name="Lie" link="charm" book="KC"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="1" name="Performance" link="Charm" special-required="true" book="KC"/>
+          <effect type="skill" cost="1" name="Performance" link="charm" special-required="true" book="KC"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="1" name="Persuasion" link="Charm" book="KC"/>
+          <effect type="skill" cost="1" name="Persuasion" link="charm" book="KC"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="1" name="Interrogation" link="Command" book="KC"/>
+          <effect type="skill" cost="1" name="Interrogation" link="command" book="KC"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="1" name="Intimidation" link="Command" book="KC"/>
+          <effect type="skill" cost="1" name="Intimidation" link="command" book="KC"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="1" name="Leadership" link="Command" book="KC"/>
+          <effect type="skill" cost="1" name="Leadership" link="command" book="KC"/>
         </effects>
       </pool>
       <pool name="">
         <effects>
-          <effect type="skill" cost="1" name="Stability" link="Command" book="KC"/>
+          <effect type="skill" cost="1" name="Stability" link="command" book="KC"/>
         </effects>
       </pool>
     </pools>
@@ -1366,7 +1366,7 @@
 
       <pool type="power" name="Unbreakable Claws" normal="0" hard="0" wiggle="0" die-cost="9" points="0" book="WT2E">
         <effects>
-          <effect type="skill" name="Brawling" link="Body" cost="1" book="WT2E">
+          <effect type="skill" name="Brawling" link="body" cost="1" book="WT2E">
             <modifiers>
               <modifier type="level" name="Attacks" cost="1" ranks="2"/>
               <modifier type="extra" name="Deadly (Killing)" cost="1" has-ranks="false" book="WT2E"/>
