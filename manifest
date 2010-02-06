@@ -1,8 +1,26 @@
-#appname: Wild Talents Character Creator
-#publisher: universalmind
-#url: http://www.arcanearcade.com/wildtalents
-#image: default_app_logo.png
-#appid: com.arcanearcade.wildtalentscharactercreator
-#desc: undefined
-#type: desktop
-#guid: 8da05c7e-1936-4e45-b39f-d4a92ddc9c5d
+#appname:Wild Talents Character Creator
+#appid:com.arcanearcade.wildtalentscharactercreator
+#publisher:Robert Stehwien
+#image:default_app_logo.png
+#url:http://www.arcanearcade.com/wildtalents
+#guid:8da05c7e-1936-4e45-b39f-d4a92ddc9c5d
+#desc:Character creator for the Wild Talents tabletop RPG
+#type:desktop
+runtime:0.8.0
+api:0.8.0
+tiapp:0.8.0
+tifilesystem:0.8.0
+tiplatform:0.8.0
+tiui:0.8.0
+javascript:0.8.0
+tianalytics:0.8.0
+ticodec:0.8.0
+tidatabase:0.8.0
+tidesktop:0.8.0
+tigrowl:0.8.0
+timedia:0.8.0
+timonkey:0.8.0
+tinetwork:0.8.0
+tinotification:0.8.0
+tiprocess:0.8.0
+tiworker:0.8.0
