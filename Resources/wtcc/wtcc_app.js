@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	$.ajax({
 		type: "GET",
-		url: "xml/WildTalentsCharacterCreatorData.xml",
+		url: "wtcc/xml/WildTalentsCharacterCreatorData.xml",
 		dataType: "xml",
 		success: function(xml) {
 			$(xml).find('config-choice').each(function(){
