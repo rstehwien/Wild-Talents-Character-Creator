@@ -18,12 +18,9 @@
       <config-choice type="stats" link="default_stats"/>
       <config-choice type="skills" link="_ALL_"/>
       <config-choice type="meta-qualities" link="_ALL_"/>
-      <!--<config-choice type="archetypes" link="_ALL_"/>-->
-      <config-choice type="archetypes" link="kerberos_club_archetypes"/>
-      <config-choice type="archetypes" link="wild_talents_archetypes"/>
-      <!--<config-choice type="modifiers" link="_ALL_"/>-->
+      <config-choice type="archetypes" link="_ALL_"/>
+      <config-choice type="modifiers" link="_ALL_"/>
       <config-choice type="powers" link="_ALL_"/>
-      <config-choice type="character" link="default_character"/>
       <config-choice type="tables" link="default_tables"/>
     </config-set>
   </config-sets>
@@ -1267,7 +1264,7 @@
       <modifier type="extra" name="Go First" cost="1" book="WT2E"/>
       <modifier type="extra" name="Hardened Defense" cost="2" has-ranks="false" book="WT2E"/>
       <modifier type="extra" name="Interference" cost="3" has-ranks="false" book="WT2E"/>
-      <modifier type="extra" name="Native" cost="1" has-ranks="false" book="WT2E"/>
+      <modifier type="extra" name="Native" ref="native" cost="1" has-ranks="false" book="WT2E"/>
       <modifier type="extra" name="No Physics" cost="1" has-ranks="false" book="WT2E"/>
       <modifier type="extra" name="No Upward Limit" cost="2" has-ranks="false" book="WT2E"/>
       <modifier type="extra" name="Non-Physical" cost="2" has-ranks="false" book="WT2E"/>
@@ -1706,121 +1703,24 @@
     </tables>
   </config-chooser>
 
-  <config-chooser type="character">
-    <character version="1" ref="default_character" name="" points="0" pointsStats="0" pointsSkills="0" pointsWillpower="0" pointsPowers="0" pointsArchetype="0">
-      <infos>
-        <info name="Player"/>
-        <info name="Description"><![CDATA[  ]]></info>
-        <info name="Occupation"/>
-      </infos>
-      <willpower base="2" current="2">
-        <motivations>
-          <motivation type="loyalty" name="My Loyalty" value="1"/>
-          <motivation type="passion" name="My Passion" value="1"/>
-        </motivations>
-      </willpower>
-      <archetype name="Super-Normal" points="5">
-        <sources>
-          <source name="Driven" cost="0"/>
-        </sources>
-        <permissions>
-          <permission name="Peak Performer" cost="5"/>
-        </permissions>
-      </archetype>
-      <pools type="stats">
-        <pool name="Body" type="stat" normal="1" die-cost="5" points="5">
-          <effects>
-            <effect type="stat" name="Body" cost="4" include-measurement="true">
-              <modifiers>
-                <modifier type="extra" name="Native" cost="1" has-ranks="false"/>
-              </modifiers>
-            </effect>
-          </effects>
-        </pool>
-        <pool name="Coordination" type="stat" normal="1" die-cost="5" points="5">
-          <effects>
-            <effect type="stat" name="Coordination" cost="4" include-measurement="true">
-              <modifiers>
-                <modifier type="extra" name="Native" cost="1" has-ranks="false"/>
-              </modifiers>
-            </effect>
-          </effects>
-        </pool>
-        <pool name="Sense" type="stat" normal="1" die-cost="5" points="5">
-          <effects>
-            <effect type="stat" name="Sense" cost="4" include-measurement="true">
-              <modifiers>
-                <modifier type="extra" name="Native" cost="1" has-ranks="false"/>
-              </modifiers>
-              <measurements type="Sense">
-                <measurement pool="1" text="You notice when someone’s talking to you—sometimes."/>
-              </measurements>
-            </effect>
-          </effects>
-        </pool>
-        <pool name="Mind" type="stat" normal="1" die-cost="5" points="5">
-          <effects>
-            <effect type="stat" name="Mind" cost="4" include-measurement="true">
-              <modifiers>
-                <modifier type="extra" name="Native" cost="1" has-ranks="false"/>
-              </modifiers>
-              <measurements type="Mind">
-                <measurement pool="1" text="When people call you an intellectual, you can’t always tell they’re joking."/>
-              </measurements>
-            </effect>
-          </effects>
-        </pool>
-        <pool name="Charm" type="stat" normal="1" die-cost="5" points="5">
-          <effects>
-            <effect type="stat" name="Charm" cost="4" include-measurement="true">
-              <modifiers>
-                <modifier type="extra" name="Native" cost="1" has-ranks="false"/>
-              </modifiers>
-              <measurements type="Charm">
-                <measurement pool="1" text="You’re a wallflower."/>
-              </measurements>
-            </effect>
-          </effects>
-        </pool>
-        <pool name="Command" type="stat" normal="1" die-cost="5" points="5">
-          <effects>
-            <effect type="stat" name="Command" cost="4" include-measurement="true">
-              <modifiers>
-                <modifier type="extra" name="Native" cost="1" has-ranks="false"/>
-              </modifiers>
-              <measurements type="Command">
-                <measurement pool="1" text="You are easily startled."/>
-              </measurements>
-            </effect>
-          </effects>
-        </pool>
-      </pools>
-      <pools type="skills"/>
-      <pools type="powers"/>
-      <custom-modifiers>
-        <effect type="modifier" name="Combo Modifier1">
-          <modifiers/>
-        </effect>
-        <effect type="modifier" name="Combo Modifier2">
-          <modifiers/>
-        </effect>
-      </custom-modifiers>
-
-      <measurements>
-        <measurement pool="1" type="Body" name="Lift" units="lbs" value="50"/>
-        <measurement pool="1" type="Body" name="Throw" units="lbs" value="6.25"/>
-        <measurement pool="1" type="Body" name="Damage" text="Shock"/>
-        <measurement pool="1" type="Body" name="Sprint" units="mph" value="8"/>
-        <measurement pool="1" type="Body" name="Long Jump" units="yards" value="2"/>
-        <measurement pool="1" type="Body" name="High Jump" units="yards" value="0.5"/>
-        <measurement pool="1" type="Coordination" text="You can cross a room safely if there’s nothing in the way."/>
-        <measurement pool="1" name="Sense" text="You notice when someone’s talking to you—sometimes."/>
-        <measurement pool="1" name="Mind" text="When people call you an intellectual, you can’t always tell they’re joking."/>
-        <measurement pool="1" type="Charm" text="You’re a wallflower."/>
-        <measurement pool="1" type="Command" text="You are easily startled."/>
-      </measurements>
-
-    </character>
-  </config-chooser>
+  <character version="1" ref="default_character" name="" points="0" pointsStats="0" pointsSkills="0" pointsWillpower="0" pointsPowers="0" pointsArchetype="0">
+    <infos>
+      <info name="Player"/>
+      <info name="Description"><![CDATA[  ]]></info>
+      <info name="Occupation"/>
+    </infos>
+    <willpower base="0" current="0">
+      <motivations>
+      </motivations>
+    </willpower>
+    <archetype></archetype>
+    <pools type="stats"></pools>
+    <pools type="skills"></pools>
+    <pools type="powers"></pools>
+    <custom-modifiers>
+    </custom-modifiers>
+    <measurements>
+    </measurements>
+  </character>
 
 </data>

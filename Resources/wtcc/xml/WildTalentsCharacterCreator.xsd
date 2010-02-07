@@ -6,6 +6,7 @@
         <xs:choice maxOccurs="unbounded" minOccurs="0">
           <xs:element minOccurs="0" ref="config-sets"/>
           <xs:element maxOccurs="unbounded" minOccurs="0" ref="config-chooser"/>
+          <xs:element minOccurs="0" ref="character"/>
         </xs:choice>
       </xs:sequence>
       <xs:attribute form="unqualified" name="version" type="xs:integer" use="required"/>
@@ -357,7 +358,6 @@
           <xs:element ref="effects" minOccurs="0" maxOccurs="unbounded"/>
           <xs:element ref="capacities" minOccurs="0" maxOccurs="unbounded"/>
           <xs:element maxOccurs="unbounded" ref="archetypes" minOccurs="0"/>
-          <xs:element ref="character" minOccurs="0" maxOccurs="unbounded"/>
           <xs:element ref="tables" minOccurs="0" maxOccurs="unbounded"/>
           <xs:element maxOccurs="unbounded" minOccurs="0" ref="meta-qualities"/>
           <xs:element maxOccurs="unbounded" minOccurs="0" ref="pools"/>
