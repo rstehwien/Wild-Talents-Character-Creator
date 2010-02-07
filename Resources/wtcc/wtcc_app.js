@@ -95,7 +95,7 @@ var WTCC = {
           WTCC.config.character = xml;
           WTCC.config.jcharacter = $(xml);
 
-          var version = parseInt(WTCC.config.jcharacter.find('character').attr('version'));
+          var version = parseInt(WTCC.config.jcharacter.attr('version'));
           if (WTCC.valid_versions.indexOf(version) < 0)
           {
               WTCC.appendMessage('Unsupported character version ' + version);
@@ -133,4 +133,7 @@ var WTCC = {
 
 $(function() {
     WTCC.documentReady();
+    $("#wtcc_tabs").tabs();
+    $("#wtc_list_info").sortable();
+    $("#wtc_list_info").disableSelection();
 });
